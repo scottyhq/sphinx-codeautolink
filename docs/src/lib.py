@@ -19,10 +19,9 @@ class Knight:
         """Knight taunts the adversary."""
         return self.taunts[::-1][self.limbs]
 
-    def wound(self) -> Self:
-        """return a modified Knight :)"""
-        self.scratch()
-        return self
+    def heal(self) -> Self:
+        """creates a fresh Knight :)"""
+        return Knight()
 
 
 class Shrubbery:
