@@ -17,7 +17,7 @@ Click any names in the example below for a demonstration:
        knight.scratch()
 
    # Test method chaining
-   arthur = knight.heal().taunt()
+   print(knight.heal().taunt())
 
 A directive to create a table of references from code examples to a single
 definition is also provided, which can also be integrated with autodoc entries.
