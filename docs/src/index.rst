@@ -16,6 +16,11 @@ Click any names in the example below for a demonstration:
        print(knight.taunt())
        knight.scratch()
 
+   # Test chaining
+   arthur = lib.Knight()
+   arthur.scratch()
+   arthur.wound().taunt()
+
 A directive to create a table of references from code examples to a single
 definition is also provided, which can also be integrated with autodoc entries.
 For example, :code:`.. autolink-examples:: lib.Knight` produces:

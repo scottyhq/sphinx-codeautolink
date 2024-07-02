@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Self
 
 
 class Knight:
@@ -18,6 +18,11 @@ class Knight:
     def taunt(self) -> str:
         """Knight taunts the adversary."""
         return self.taunts[::-1][self.limbs]
+
+    def wound(self) -> Self:
+        """return a modified Knight :)"""
+        self.scratch()
+        return self
 
 
 class Shrubbery:
